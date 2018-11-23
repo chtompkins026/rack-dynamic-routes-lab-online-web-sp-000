@@ -8,6 +8,8 @@ class Application
  
     if req.path.match(/items/)
       item_n = req.path.split("/items/").last 
+      if item_n.nil? 
+        
       item = @@items.find{|it| it.name == item_n} 
       
       resp.write item.price 
