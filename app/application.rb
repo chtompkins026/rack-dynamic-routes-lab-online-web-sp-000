@@ -10,7 +10,7 @@ class Application
       item_n = req.path.split("/items/").last 
       item = @@items.find{|it| it.name == item_n} 
       
-      resp.write item.name 
+      resp.write item.price 
  
     resp.finish
   end
