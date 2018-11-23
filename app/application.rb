@@ -16,6 +16,9 @@ class Application
       else 
         resp.write item.price 
       end 
+    
+    else 
+      resp.write ""
  
     resp.finish
   end
